@@ -1,0 +1,55 @@
+    <div id="contact" class="container">
+        <div class="col-md-10 col-sm-10 col-xs-10 cms-main">
+            <h2 class="page-header">Contact</h2>
+        </div>
+    </div>
+
+    <!-- Start of main content -->
+    <!--<main id="main" role="main">-->
+        <div class="container px2">
+	        <form id="contact-form" class="form">
+                <input type="text" name="_gotcha" style="display:none" />
+                <div class="container" id="form-inputs">
+	                <div class="row">
+	                    <div class="form-group col-sm-6">
+	                        <label for="name" class="h4">Name</label>
+	                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
+	                    </div>
+	                    <div class="form-group col-sm-6">
+	                        <label for="email" class="h4">Email</label>
+	                        <input type="email" class="form-control" name="_replyto" id="email" placeholder="Enter email" required pattern="[a-zA-Z0-9._%+-]{2,}@[a-zA-Z0-9.-]{2,}\.[a-z]{2,}$">
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="form-group col-sm-12">
+	                        <label for="subject" class="h4 ">Subject</label>
+	                        <input type="text" class="form-control" name="_subject" id="subject" placeholder="Subject" required></textarea>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="form-group col-sm-12">
+	                        <label for="message" class="h4 ">Message</label>
+	                        <textarea name="message" id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="form-group col-sm-12">
+	                        <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+	                        <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+	                    </div>
+	                </div>
+                </div>
+                <div class="container" id="form-results">
+	                <div class="row">
+	                    <div class="form-group col-sm-12">
+	                    </div>
+	                </div>
+                </div>
+	        </form>
+        </div>
+    <!--</main>-->
+    <!-- End of main content -->
+
+    <!-- Javascript -->
+    <!--<script src="/assets/js/other.min.js"></script>-->
+    <script src="/assets/js/formspree.js"></script>

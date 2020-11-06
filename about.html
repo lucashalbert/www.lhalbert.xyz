@@ -1,0 +1,150 @@
+    <script type="text/javascript">
+        $(document).ready(function() {
+	        $("#lightSlider").lightSlider({
+	        item: 5,
+	        autoWidth: false,
+	        slideMove: 1, // slidemove will be 1 if loop is true
+	        slideMargin: 10,
+	 
+	        addClass: '',
+	        mode: "slide",
+	        useCSS: true,
+	        cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+	        easing: 'linear', //'for jquery animation',////
+	 
+	        speed: 400, //ms'
+	        auto: true,
+	        loop: true,
+	        slideEndAnimation: true,
+	        pause: 2000,
+	 
+	        keyPress: false,
+	        controls: false,
+	        prevHtml: '<i class="fa fa-chevron-left fa-lg text-muted"></i>',
+	        nextHtml: '<i class="fa fa-chevron-right fa-lg text-muted"></i>',
+	 
+	        rtl:false,
+	        adaptiveHeight:false,
+	 
+	        vertical:false,
+	        verticalHeight:500,
+	        vThumbWidth:100,
+	 
+	        thumbItem:10,
+	        pager: true,
+	        gallery: false,
+	        galleryMargin: 5,
+	        thumbMargin: 5,
+	        currentPagerPosition: 'middle',
+	 
+	        enableTouch:true,
+	        enableDrag:true,
+	        freeMove:true,
+	        swipeThreshold: 40,
+	 
+	        responsive : [
+                {
+                    breakpoint:800,
+                    settings: {
+                        item:3,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                }
+            ],
+	 
+	        onBeforeStart: function (el) {},
+	        onSliderLoad: function (el) {},
+	        onBeforeSlide: function (el) {},
+	        onAfterSlide: function (el) {},
+	        onBeforeNextSlide: function (el) {},
+	        onBeforePrevSlide: function (el) {}
+	    });
+    });
+    </script>
+    <div id="about" class="container">
+        <div class="col-md-10 col-sm-10 col-xs-10 cms-main">
+            <h2 class="page-header">About</h2>
+        </div>
+    </div>
+
+    <!-- Start of main content -->
+    <!--<main id="main" role="main">-->
+        <div class="container px2">
+			<!-- Start row 1 -->
+			<ul class="columns columns-2">
+			    <li class="column">
+			        <p><br></p>
+			        <figure style="text-align: center;"><img src="/assets/images/lhalbert.jpg" alt="lhalbert" style="max-width: 300px;"></figure>
+			    </li>
+			    <li class="column">
+			        <h2>About Me...</h2>
+			        <p>My name is Lucas Halbert and I am Senior Systems Engineer for <a href="http://reverus.com/">Reverus Corp</a>. I graduated in 2015 from <a href="//sunypoly.edu">SUNY Polytechnic Institute</a> majoring in Computer Engineering Technology, Electrical Engineering Technology, and minoring in Computer Science.</p>
+			    </li>
+			</ul>
+			<!-- End row 1 -->
+			<hr>
+			<!-- Start row 2 -->
+			<ul class="columns columns-2">
+			    <li class="column">
+			        <h2>What I do...</h2>
+                    <p>I have been a systems administrator for <script>$('#sysadmin-years').text(((new Date()).getFullYear() - 2010));</script><span id="sysadmin-years"></span> years and for the last <script>$('#secadmin-years').text(((new Date()).getFullYear() - 2012));</script><span id="secadmin-years"></span> years have directed my efforts towards Linux Systems Engineering with a focus on Information and Network Security. Throughout my time working with technology I have learned problem solving skills, best practices, and most importantly patience. Prior to my career in IT I took a much more physical approach to life by doing labor intensive tasks such as landscaping and other general labor jobs.</p> 
+			    </li>
+			    <li class="column">
+			        <p><br></p>
+			        <figure style="text-align: center;"><img src="/assets/images/DevSecOps.png" alt="DevSecOps" style=""></figure>
+			    </li>
+			</ul>
+			<!-- End row 2 -->
+            <!-- Start row 3 -->
+            <h2 style="text-align: center;">Certifications</h2>
+            <div id="certificationsLightSlider" class="container px3">
+                <!-- Wrapper for slides -->
+                <ul id="lightSlider">
+                    <li data-thumb="/assets/images/certs/AWS_Solutions_Architect_Association.png">
+                        <img src="/assets/images/certs/AWS_Solutions_Architect_Association.png" alt="AWS Solutions Architect Associate">
+                    </li>
+                    <li data-thumb="/assets/images/certs/ccna_600.png">
+                        <img src="/assets/images/certs/ccna_600.png" alt="Cisco CCNA">
+                    </li>
+                    <li data-thumb="/assets/images/certs/Cisco_CCNA_RS.png">
+                        <img src="/assets/images/certs/Cisco_CCNA_RS.png" alt="Cisco CCNA Routing & Switching">
+                    </li>
+                    <li data-thumb="/assets/images/certs/CompTIA_A_Plus.png">
+                        <img src="/assets/images/certs/CompTIA_A_Plus.png" alt="CompTIA A+">
+                    </li>
+                    <li data-thumb="/assets/images/certs/CompTIA_Network_Plus.png">
+                        <img src="/assets/images/certs/CompTIA_Network_Plus.png" alt="CompTIA Network+">
+                    </li>
+                    <li data-thumb="/assets/images/certs/CNCF_CKA.png">
+                        <img src="/assets/images/certs/CNCF_CKA.png" alt="Cloud Native Computing Foundation Certified Kubernetes Administrator">
+                    </li>
+                    <li data-thumb="/assets/images/certs/CNCF_CKAD.png">
+                        <img src="/assets/images/certs/CNCF_CKAD.png" alt="Cloud Native Computing Foundation Certified Kubernetes Application Developer">
+                    </li>
+                    <li data-thumb="/assets/images/certs/Linux_Foundation_Certified_Engineer.png">
+                        <img src="/assets/images/certs/Linux_Foundation_Certified_Engineer.png" alt="Linux Foundation Certified Engineer">
+                    </li>
+                    <li data-thumb="/assets/images/certs/NetApp_Logo.png">
+                        <img src="/assets/images/certs/NetApp_Logo.png" alt="NetApp-logo">
+                    </li>
+                    <li data-thumb="/assets/images/certs/Cisco_Meraki_Logo.png">
+                        <img src="/assets/images/certs/Cisco_Meraki_Logo.png" alt="Cisco-meraki-logo">
+                    </li>
+                </ul>
+            </div>
+            <!-- End row 3 -->
+			<hr>
+        </div>
+<!--    </main> -->
+    <!-- End of main content -->
+
+    <!-- Javascript -->
+<!--    <script src="/assets/js/other.min.js"></script>-->

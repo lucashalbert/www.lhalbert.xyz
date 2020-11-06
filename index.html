@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>www.lhalbert.xyz</title>
+    <link href='assets/images/terminal.ico' rel='shortcut icon' type='image/ico'>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Lucas Halbert" />
+    <meta name="description" content="Lucas Halbert Personal Website">
+    <meta name="keywords" content="Aristotheme,Lucas Halbert,Lucas,Halbert,Linux,Unix,FreeBSD,Network,Engineer,System">
+    <meta name="robots" content="index"/>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="www.lhalbert.xyz" />
+    <meta property="og:description" content="Lucas Halbert Personal Website" />
+    <meta property="og:url" content="https://www.lhalbert.xyz" />
+    <meta property="og:site_name" content="www.lhalbert.xyz"/>
+    <link rel="canonical" href="https://www.lhalbert.xyz" />
+    <link rel="publisher" href="https://www.linkedin.com/in/lucashalbert/"/>
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Expletus+Sans:400,700'>
+    <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-sticky-footer.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/lightslider.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--<script src="/assets/js/third-party/isotope-1.4.110721.min.js"></script>-->
+    <script src="assets/js/third-party/tween_light-1.13.1.min.js"></script>
+    <script src="assets/js/third-party/easy_pack-b1.9.4.min.js"></script>
+    <script src="assets/js/third-party/lightslider.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139915457-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-139915457-2');
+    </script>
+    <script>$(function(){
+      $("#about-container").load("about.html");
+      $("#contact-container").load("contact.html");
+    });
+    </script>
+</head>
+<body id="top">
+    <!-- Start of header -->
+    <header class="header absolute top-0 left-0">
+        <!--<div class="logo absolute block h3 m0 caps bold">-->
+        <div class="logo absolute block h3 m0 bold">
+            <a href="//www.lhalbert.xyz">www.lhalbert.xyz</a>
+            <!-- Start of breadcrumb-nav -->
+            <nav class="breadcrumb md-show" role="navigation">
+            </nav>
+            <!-- End of breadcrumb-nav -->
+        </div>
+        <!-- Start main page navigation -->
+        <nav role="navigation">
+            <ul class="main-nav absolute md-show">
+                <li class="inline-block ml2 caps bold"><a href="javascript:scrollTo('#top')">home</a></li>
+                <li class="inline-block ml2 caps bold"><a href="javascript:scrollTo('#about')">about</a></li>
+                <li class="inline-block ml2 caps bold"><a href="javascript:scrollTo('#contact')">contact</a></li>
+                <li class="inline-block ml2 caps bold"><a href="//techspertadvice.com">blog</a></li>
+                <li class="inline-block ml2 caps bold"><a href="/assets/docs/Lucas_Halbert-Resume-20200106.pdf">Résumé</a></li>
+            </ul>
+        </nav>
+        <!-- End main page navigation -->
+        <!-- Start responsive-nav-trigger -->
+        <a class="responsive-nav-trigger absolute md-hide inline-block">
+            <span class="menu-icon absolute"></span>
+        </a>
+        <!-- End responsive-nav-trigger -->
+    </header>
+    <!-- End of header -->
+    <!-- Start of responsive-nav content -->
+    <nav role="navigation">
+            <ul class="responsive-nav fixed left-0 top-0 center z2">
+                <li><a class="caps inline-block p2 bold" href="javascript:scrollTo('#top')">home</a></li>
+                <li><a class="caps inline-block p2 bold" href="javascript:scrollTo('#about')">about</a></li>
+                <li><a class="caps inline-block p2 bold" href="javascript:scrollTo('#contact')">contact</a></li>
+                <li><a class="caps inline-block p2 bold" href="//techspertadvice.com">blog</a></li>
+                <li><a class="caps inline-block p2 bold" href="/assets/docs/Lucas_Halbert-Resume-20200106.pdf">Résumé</a></li>
+            </ul>
+    </nav>
+    <!-- End of responsive-nav content -->
+
+    <!-- Start of animated hero -->
+    <section id="hero">
+        <div id="large-header" style="height: 337px;; background-image:url(/assets/images/noise.png); background-color: #333">
+            <canvas id="animated-background" style="width:100%"></canvas>
+            <div class="hero-title absolute m0 center caps"><p><span id="hero-message"></span></p></div>
+        </div>
+    </section>
+    <!-- End of animated hero -->
+
+    <!-- Start of main content -->
+    <main id="main" class="container px3" role="main">
+        <div id="about-container"></div>
+        <div id="contact-container"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="container clearfix">
+            <div class="center">
+                <p class="p0">Copyright &copy;<span id="copyright-year"></span> - <a href="/" style="text-transform: none;">www.lhalbert.xyz</a></p>
+            </div>
+            <div class="social2 center">
+                <ul class="p0 m0 ">
+                    <li class="inline-block"><a href="//www.linkedin.com/in/lucashalbert/" style="background-color: #0077b5;"><i class="fab fa-linkedin fa-md fa-fw"></i></a></li>
+                    <li class="inline-block"><a href="//github.com/lucashalbert/" style="background-color: #333;" ><i class="fab fa-github-square fa-md fa-fw"></i></a></li>
+                    <li class="inline-block"><a href="//twitter.com/lucashalbert/" style="background-color: #1da1f2;" ><i class="fab fa-twitter-square fa-md fa-fw"></i></a></li>
+                    <li class="inline-block"><a href="//hub.docker.com/u/lucashalbert" style="background-color: #27343b;" ><i class="fab fa-docker fa-md fa-fw"></i></a></li>
+                    <li class="inline-block"><a href="//stackoverflow.com/users/6670074/lucashalbert/" style="background-color: #07C;" ><i class="fab fa-stack-overflow fa-md fa-fw"></i></a></li>
+                    <li class="inline-block"><a href="//keybase.io/lhalbert/" style="background-color: #ff6f21;" ><i class="fab fa-keybase fa-md fa-fw"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <a href="javascript:scrollTo('#top')" class="backtotop inline-block fixed overflow-hidden z4" style="background:url(/assets/images/top-arrow.svg) center 50% no-repeat rgba(0,0,0,.8);">Top</a>
+     <!-- Javascript -->
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
