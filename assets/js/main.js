@@ -32,6 +32,12 @@ jQuery(document).ready(function($){
 
 });
 
+
+// Function to scroll to a specific element
+function scrollTo(element) {
+  $('html,body').animate({scrollTop: $(element).offset().top-$('.header').height()}, 0)
+}
+
 /*--------------------------------------------------
  HEADER
  ---------------------------------------------------*/
@@ -95,6 +101,10 @@ jQuery(document).ready(function($){
 });
 
 
+/*--------------------------------------------------
+ Dynamic Site Content
+ ---------------------------------------------------*/
+
 jQuery(document).ready(function($){
     $('#copyright-year').text((new Date()).getFullYear());
 
@@ -106,30 +116,12 @@ jQuery(document).ready(function($){
         $('#hero-message').fadeOut(function() {
             $(this).text(welcomeText[counter]);
         }).fadeIn();
-        //typeWriter(welcomeText[counter]);
         counter++;
         if (counter >= welcomeText.length) {
             counter = 0;
-            //clearInterval(interval);
         }
     }
-
-    //function typeWriter(txt) {
-    //    if (i < txt.length) {
-    //        $('#hero-message').text(txt.charAt(i);
-    //        i++;
-    //        setTimeout(typeWriter, speed)
-    //    }
-    //}
-             
-        
 });
-
-function scrollTo(element) {
-  $('html,body').animate({scrollTop: $(element).offset().top-$('.header').height()}, 0)
-}
-
-
 
 
 $(function() {
