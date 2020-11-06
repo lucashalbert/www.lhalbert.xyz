@@ -96,14 +96,16 @@ jQuery(document).ready(function($){
 
 
 jQuery(document).ready(function($){
-    $('#copyright-year').text((new Date()).getFullYear());console.log((new Date()).getFullYear())
+    $('#copyright-year').text((new Date()).getFullYear());
 
     // Dynamic Welcome message
-    var welcomeText = ["Welcome", "Hola", "Bonjour", "Guten Tag", "Goddag", "Namaste"];
+    var welcomeText = ["Welcome", "Hola", "Bonjour", "Guten Tag", "Goddag", "Namaste", "Dzień dobry", "Goedendag", "Konnichiwa", "Zdravstvuyte", "Anyoung haseyo"];
     var counter = 0;
     var interval = setInterval(change, 3000);
     function change() {
-        $('#hero-message').text(welcomeText[counter]);
+        $('#hero-message').fadeOut(function() {
+            $(this).text(welcomeText[counter]);
+        }).fadeIn();
         //typeWriter(welcomeText[counter]);
         counter++;
         if (counter >= welcomeText.length) {
