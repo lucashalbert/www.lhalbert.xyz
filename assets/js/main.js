@@ -104,7 +104,7 @@ jQuery(document).ready(function($){
     var interval = setInterval(change, 3000);
     function change() {
         $('#hero-message').text(welcomeText[counter]);
-        typeWriter(welcomeText[counter]);
+        //typeWriter(welcomeText[counter]);
         counter++;
         if (counter >= welcomeText.length) {
             counter = 0;
@@ -112,13 +112,13 @@ jQuery(document).ready(function($){
         }
     }
 
-    function typeWriter(txt) {
-        if (i < txt.length) {
-            $('#hero-message').text(txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed)
-        }
-    }
+    //function typeWriter(txt) {
+    //    if (i < txt.length) {
+    //        $('#hero-message').text(txt.charAt(i);
+    //        i++;
+    //        setTimeout(typeWriter, speed)
+    //    }
+    //}
              
         
 });
