@@ -967,6 +967,7 @@ footer {
 .footer {
     position: fixed;
     height: 4.3em
+    background-color: white;
 }
 
 footer .social {
