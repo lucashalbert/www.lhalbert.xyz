@@ -957,8 +957,13 @@ Contact
 Footer
 ---------------------------------------------------*/
 main {
+    padding-bottom: 9.3em;
+}
+@media (min-width: 449px) {
+    main {
         padding-bottom: 8.3em;
     }
+}
 @media (min-width: 414px) {
     main {
         padding-bottom: 7.3em;
