@@ -957,7 +957,27 @@ Contact
 Footer
 ---------------------------------------------------*/
 main {
-    padding-bottom: 4.3em;
+        padding-bottom: 8.3em;
+    }
+@media (min-width: 414px) {
+    main {
+        padding-bottom: 7.3em;
+    }
+}
+@media (min-width: 768px) {
+    main {
+        padding-bottom: 6.3em;
+    }
+}
+@media (min-width: 992px) {
+    main {
+        padding-bottom: 4.3em;
+    }
+}
+@media (min-width: 1200px) {
+    main {
+        padding-bottom: 4.3em;
+    }
 }
 footer {
 	line-height: 30px;
