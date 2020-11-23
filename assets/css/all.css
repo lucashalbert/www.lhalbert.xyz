@@ -2470,6 +2470,8 @@ header:after, #timeline .timeline-item:after, header:before, #timeline .timeline
 }
 #timeline .timeline-item .timeline-content h6 {    
     background: #f0f0f0;
+    text-shadow:0px 0px 1px black;
+    font-weight: normal;
 }
 #timeline .timeline-item .timeline-content:before {
     content: '';
