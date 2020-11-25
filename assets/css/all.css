@@ -994,6 +994,11 @@ footer {
     background-color: white;
 }
 
+footer .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 footer .social {
   float: right;
 }
