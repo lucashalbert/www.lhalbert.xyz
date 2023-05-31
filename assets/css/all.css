@@ -851,6 +851,7 @@ Back To Top
 .backtotop.is-visible {
 	visibility: visible;
 	opacity: 1;
+    z-index: 2;
 }
 
 .backtotop.fade-out {
@@ -1117,6 +1118,13 @@ Header
 	border-bottom: 1px solid #efcc00;
 }
 
+.main-nav li:hover .sub-nav {
+    display: block !important;
+    list-style-type: none;
+    padding-left: 0;
+    filter: brightness(70%);
+}y
+
 .responsive-nav-trigger {
 	right: 1rem;
 	top: 15px;
@@ -1143,6 +1151,7 @@ Header
 	-moz-transition: background-color 0.3s;
 	transition: background-color 0.3s;
 }
+
 
 .responsive-nav-trigger .menu-icon::before, .responsive-nav-trigger .menu-icon::after {
 	content: '';
@@ -1237,6 +1246,10 @@ Header
 	-ms-transform: translateY(0);
 	-o-transform: translateY(0);
 	transform: translateY(0);
+}
+
+.responsive-nav.sub-nav, .responsive-nav.sub-nav li:first-child {
+    padding: 0
 }
 
 /* 4. Hero */
